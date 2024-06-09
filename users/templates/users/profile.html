@@ -1,0 +1,21 @@
+{% extends 'food/base.html' %}
+<!--<img height="200px" width="200px" src="{{user.profile.image.url}}" />
+<h4>Name : {{user.username}}</h4>
+<h4>Email : {{user.email}}</h4>-->
+
+{% block body %}
+<div class="container mt-5">
+  <div class="card" style="max-width: 500px; margin: auto">
+    <div class="card-body text-center">
+      <img
+        src="{{user.profile.image.url}}"
+        class="rounded-circle mb-3"
+        style="height: 150px; width: 150px; object-fit: cover"
+        alt="Profile Image"
+      />
+      <h4 class="card-title">Name: {{user.username}}</h4>
+      <h5 class="card-text">Email: {{user.email}}</h5>
+    </div>
+  </div>
+</div>
+{% endblock %}
