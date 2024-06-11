@@ -1,5 +1,5 @@
 {% extends 'food/base.html' %}
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -38,33 +38,30 @@
       }
     </style>
   </head>
-  <body>
-    <div class="container d-flex justify-content-center align-items-center">
-      {% block body %} {% for item in item_list %}
+  <body>-->
+{% block title%}Lunch Management{%endblock%}
+<div class="container d-flex justify-content-center align-items-center">
+  {% block body %} {% for item in item_list %}
 
-      <div class="card mb-3 offset-md-2" style="height: 800px; width: 700px">
-        <img
-          src="{{item.item_image}}"
-          class="card-img-top"
-          alt="{{item.item_name}}"
-          style="height: 500px; width: 100%; object-fit: cover"
-        />
-        <div class="card-body">
-          <h4 class="card-title">{{item.item_name}}</h4>
-          <h5>BDT {{ item.item_price }}</h5>
-          <h6>Item added by {{item.user_name}}</h6>
-          <p class="card-text">
-            <small>Added {{ item.time_stamp|timesince }} ago</small><br />
-          </p>
-          <a
-            href="{% url 'food:detail' item.id %}"
-            class="btn btn-success mt-auto"
-            >Details</a
-          >
-        </div>
-      </div>
-
-      {% endfor %} {% endblock %}
+  <div class="card mb-3 offset-md-2" style="height: 800px; width: 700px">
+    <img
+      src="{{item.item_image}}"
+      class="card-img-top"
+      alt="{{item.item_name}}"
+      style="height: 500px; width: 100%; object-fit: cover"
+    />
+    <div class="card-body">
+      <h4 class="card-title">{{item.item_name}}</h4>
+      <h5>BDT {{ item.item_price }}</h5>
+      <h6>Item added by {{item.user_name}}</h6>
+      <p class="card-text">
+        <small>Added {{ item.time_stamp|timesince }} ago</small><br />
+      </p>
+      <a href="{% url 'food:detail' item.id %}" class="btn btn-success mt-auto"
+        >Details</a
+      >
     </div>
-  </body>
-</html>
+  </div>
+
+  {% endfor %} {% endblock %}
+</div>
