@@ -1,5 +1,5 @@
 # Lunch_Management
-This is a lunch management system. In corporate offices they provide lunch for their empolyees and they manage that manually instead they can get help from this site by using this website they can have a online based lunch management system for their employees.
+This is a lunch management system. In corporate offices they provide lunch for their empolyees and they manage that manually instead they can get help from this site by using this website they can have a online based lunch management system for their employees. I have build up this project using Django and implemented CRUD operation for different food items.
 
 # Available Features
 In this project there are:
