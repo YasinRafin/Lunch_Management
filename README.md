@@ -4,6 +4,8 @@ This is a lunch management system. In corporate offices they provide lunch for t
 # Available Features
 In this project there are:
 ### Homepage
+![lunch](https://github.com/YasinRafin/Lunch_Management/assets/44867848/8845cf1a-2aa7-4a20-8c90-e4100d468884)
+
 ### Item Index Page
 ![food](https://github.com/YasinRafin/Lunch_Management/assets/44867848/40b40b73-c64e-49a3-8ac8-8b70c4ef6fcc)
 
